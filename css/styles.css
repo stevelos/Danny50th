@@ -1,0 +1,26 @@
+body {
+    background: #f9f9f9;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Styles for screens smaller than 600px */
+    .container {
+        flex-direction: column;
+    }
+}
