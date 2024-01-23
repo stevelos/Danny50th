@@ -1,0 +1,64 @@
+body {   
+    background: #e98a12;
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Hide overflow */
+} 
+
+.flash-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* animation: flashScreen 0.3s ease 3.5s 6; */
+    animation: flashScreen 0.3s 1.5s 6;
+    z-index: 10; /* Ensure it's above other content */
+}
+
+.animation-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative; /* Needed for absolute positioning of child elements */
+    overflow: hidden;
+}
+
+.animation-container img {
+    width: 60%; /* Adjust size as needed */
+    position: absolute;
+    top: -100%; /* Start off the screen */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust horizontal position */
+    animation: moveDown 2s ease, fadeOut 0.5s ease 3s forwards;
+}
+
+@keyframes moveDown {
+    0% {
+        top: -100%; /* Start off the screen */
+    }
+    100% {
+        top: 50%; /* Move to around the middle of the screen */
+        transform: translateX(-50%) translateY(-50%); /* Center the image */
+    }
+}
+
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes flashScreen {
+    0%, 100% {
+        background: red;
+    }
+    25%, 75% {
+        background: white;
+    }
+}
