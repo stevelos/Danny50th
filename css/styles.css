@@ -1,5 +1,6 @@
 body {
-    background: #f9f9f9;
+    /* background: #f9f9f9; */
+    background: #e98a12;
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -11,6 +12,8 @@ body {
 
 h1 {
     text-align: center;
+    color: antiquewhite;
+    font-size: 3rem;
 }
 
 img {
