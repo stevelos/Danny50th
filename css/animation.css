@@ -10,9 +10,20 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    /* animation: flashScreen 0.3s ease 3.5s 6; */
     animation: flashScreen 0.3s 1.5s 6;
     z-index: 10; /* Ensure it's above other content */
+    display: flex; /* Add this to ensure the image is centered */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.flash-overlay img {
+    opacity: 0; /* Initially hide the image */
+    max-width: 100%; /* Adjust as necessary */
+    max-height: 100%; /* Adjust as necessary */
+    object-fit: contain;
+    /* object-fit: cover;  */
+    animation: showImage 0.3s 1.5s 6; /* Synchronize with the flashScreen animation */
 }
 
 .animation-container {
@@ -57,8 +68,16 @@ body {
 @keyframes flashScreen {
     0%, 100% {
         background: red;
+        opacity: 1; /* Make the image visible */
     }
     25%, 75% {
         background: white;
     }
+}
+
+@keyframes showImage {
+    0%, 100% {
+        opacity: 1; /* Make the image visible */
+    }
+ 
 }
