@@ -5,7 +5,6 @@ body {
     margin: 0; /* Remove default margin */
   
     }
-
     
     .dm-img {
         max-width: 90%;
@@ -30,6 +29,11 @@ body {
     .header h2 span{
        font-weight: bolder;
     }
+
+    ul {
+        list-style-type: none;
+        line-height: 1.5rem;
+      }
 
     /*  */
     .fade-overlay {
