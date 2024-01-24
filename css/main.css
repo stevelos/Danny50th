@@ -14,9 +14,11 @@ body {
 
     .container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         align-items: center;
+        
     }
 
     .header {
@@ -28,6 +30,21 @@ body {
         font-size: 3rem;
         align-items: center;
     }
+    .main{
+        /* margin: 0 auto; */
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: #faf5ef;
+    }
+    .main h1{
+        font-weight: bolder;
+    }
+    .footer {
+        text-align: center;
+        color: #faf5ef;
+    }
+    
     .header h2 span{
        font-weight: bolder;
     }
