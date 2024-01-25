@@ -40,13 +40,13 @@ body {
     }
     .main h1{
         font-weight: bolder;
-        color: #BC551C;
         color: #faf5ef;
     }
     .footer {
         text-align: center;
         /* color: #faf5ef; */
         color: #faf5ef;
+        color: #95251B;
         
     
     }
@@ -60,7 +60,13 @@ body {
         line-height: 1.5rem;
         padding-left: 0; /* Removes padding where bullet points are */
         margin-left: 0; /* Adjust if there's still space on the left */
+        color: #faf5ef;
       }
+    .rsvp {
+        font-weight: bolder;
+        color: #faf5ef;
+        font-size: 1.5rem;
+    }  
      
     /*  */
     .fade-overlay {
